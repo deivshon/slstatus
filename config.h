@@ -65,12 +65,17 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 	format          argument */
-	{ run_command,	"RAM %s | ",			"~/dotfiles/scripts/bar/RAMusage/RAMusage"		},
-	{ run_command,	"DISK %s | ",			"~/dotfiles/scripts/bar/diskUsage/diskUsage"	},
-	{ run_command,	"BAT %s | ",			"~/dotfiles/scripts/bar/battery/battery"		},
-	{ run_command,	"WIFI %s | ",			"~/dotfiles/scripts/bar/wifi/wifi -n"			},
-	{ run_command,	"%s | ",           	"curl https://am.i.mullvad.net/country" 		},
-	{ cpu_perc, 	"CPU: %s | ", 	NULL			},
-	{ datetime, 	"%s",           	"%F - %T" 		},
-	
+	{ run_command,	"RAM %s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage"		},
+	{ separator, 	"%s", 		"|"	},
+	{ run_command,	"DISK %s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage"	},
+	{ separator, 	"%s", 		"|"	},
+	{ run_command,	"BAT %s",			"~/dotfiles/scripts/bar/battery/battery"		},
+	{ separator, 	"%s", 		"|"	},
+	{ run_command,	"WIFI %s",			"~/dotfiles/scripts/bar/wifi/wifi -n"			},
+	{ separator, 	"%s", 		"|"	},
+	{ run_command,	"%s",           	"curl https://am.i.mullvad.net/country" 		},
+	{ separator, 	"%s", 		"|"	},
+	{ cpu_perc, 	"CPU: %s", 	"|"				},
+	{ separator, 	"%s", 		"|"	},
+	{ datetime, 	"%s",           	"%F - %T" 		},	
 };
