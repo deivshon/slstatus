@@ -1,7 +1,5 @@
-/* See LICENSE file for copyright and license details. */
-
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 100;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
@@ -65,17 +63,19 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 	format          argument */
-	{ run_command,	"RAM %s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage"		},
-	{ separator, 	"%s", 		"|"	},
-	{ run_command,	"DISK %s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage"	},
-	{ separator, 	"%s", 		"|"	},
-	{ run_command,	"BAT %s",			"~/dotfiles/scripts/bar/battery/battery"		},
-	{ separator, 	"%s", 		"|"	},
-	{ run_command,	"WIFI %s",			"~/dotfiles/scripts/bar/wifi/wifi -n"			},
-	{ separator, 	"%s", 		"|"	},
-	{ run_command,	"%s",           	"curl https://am.i.mullvad.net/country" 		},
-	{ separator, 	"%s", 		"|"	},
-	{ cpu_perc, 	"CPU: %s", 	"|"				},
-	{ separator, 	"%s", 		"|"	},
-	{ datetime, 	"%s",           	"%F - %T" 		},	
+    { kernel_release,	"%s",			    NULL		},
+	{ separator, 	    "%s", 		"|"	},
+	{ run_command,		"RAM %s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.sh"	},
+	{ separator, 	    "%s", 		"|"	},
+	{ run_command,		"DISK %s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage.sh"	},
+	{ separator, 	    "%s", 		"|"	},
+	{ run_command,	    "BAT %s",			"~/dotfiles/scripts/bar/battery/battery.py"		},
+	{ separator, 	    "%s", 		"|"	},
+	{ run_command,	    "WIFI %s",			"~/dotfiles/scripts/bar/wifi/wifi.py -n"		},
+	{ separator, 	    "%s", 		"|"	},
+	{ run_command,	    "%s",				"~/dotfiles/scripts/bar/country/country.sh 10"		},
+	{ separator, 	    "%s", 		"|"	},
+	{ run_command,		"CPU: %s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh"	},
+	{ separator, 	    "%s", 		"|"	},
+	{ datetime, 	    "%s",				"%F - %T"										},
 };
