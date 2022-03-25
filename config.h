@@ -73,7 +73,7 @@ static const struct arg args[] = {
 	{ separator, 	    "%s", 		"|"	},
 	{ run_command,	    "WIFI %s",			"~/dotfiles/scripts/bar/wifi/wifi.py -n"		},
 	{ separator, 	    "%s", 		"|"	},
-	{ run_command,	    "%s",				"~/dotfiles/scripts/bar/country/country.sh 10"		},
+	{ run_command,	    "%s",				"~/dotfiles/scripts/bar/country/country.py"		},
 	{ separator, 	    "%s", 		"|"	},
 	{ run_command,		"CPU: %s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh"	},
 	{ separator, 	    "%s", 		"|"	},
