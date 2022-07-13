@@ -63,19 +63,19 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function 	format          argument */
-	{ run_command,		"RAM %s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.sh"	},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.sh"	},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,		"DISK %s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage.sh"	},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage.sh"	},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,		"CPU: %s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh"	},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh"	},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "BAT %s",			"~/dotfiles/scripts/bar/battery/battery.py"		},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/battery/battery.py"		},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "ETH %s",			"~/dotfiles/scripts/bar/eth/eth.py"				},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/eth/eth.py"				},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "WIFI %s",			"~/dotfiles/scripts/bar/wifi/wifi.py"			},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/wifi/wifi.py"			},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "%s",				"~/dotfiles/scripts/bar/country/country.py"		},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/country/country.py"		},
 	// { separator, 	    "%s", 		"|"	},
-	{ datetime, 	    "%s",				"%F - %T"										},
+	{ datetime, 	    "%s",			"%F - %T"										},
 };
