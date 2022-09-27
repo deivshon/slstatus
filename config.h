@@ -75,7 +75,7 @@ static const struct arg args[] = {
 	// { separator, 	    "%s", 		"|"	},
 	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/wifi/wifi.py --separator"			},
 	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/country/country.py --separator"		},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/mullvadCheck/mullvadCheck.py --separator"		},
 	// { separator, 	    "%s", 		"|"	},
 	{ datetime, 	    "%s",			"%F - %T"										},
 };
