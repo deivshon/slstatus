@@ -63,19 +63,12 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function 	format          argument */
-	{ run_command,		"%s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.sh --separator"	},
-	// { separator, 	    "%s", 		"|"	},
-	{ run_command,		"%s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage.sh --separator"	},
-	// { separator, 	    "%s", 		"|"	},
-	{ run_command,		"%s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh --separator"	},
-	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/battery/battery.py --separator"		},
-	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/eth/eth.py --separator"				},
-	// { separator, 	    "%s", 		"|"	},
-	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/wifi/wifi.py --separator"			},
-	// { separator, 	    "%s", 		"|"	},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.sh --separator"				},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage.out --separator"			},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh --separator"				},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/battery/battery.py --separator"					},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/eth/eth.out --separator"						},
+	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/wifi/wifi.py --separator"						},
 	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/mullvadCheck/mullvadCheck.py --separator"		},
-	// { separator, 	    "%s", 		"|"	},
-	{ datetime, 	    "%s",			"%F - %T"										},
+	{ datetime, 	    "%s",			"%F - %T"																},
 };
