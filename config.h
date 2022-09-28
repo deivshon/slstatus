@@ -63,7 +63,7 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function 	format          argument */
-	{ run_command,		"%s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.sh --separator"				},
+	{ run_command,		"%s",			"~/dotfiles/scripts/bar/RAMusage/RAMusage.out --separator"				},
 	{ run_command,		"%s",			"~/dotfiles/scripts/bar/diskUsage/diskUsage.out --separator"			},
 	{ run_command,		"%s",			"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.sh --separator"				},
 	{ run_command,	    "%s",			"~/dotfiles/scripts/bar/battery/battery.py --separator"					},
