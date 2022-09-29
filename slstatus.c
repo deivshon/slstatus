@@ -18,6 +18,8 @@ struct arg {
 };
 
 char buf[1024];
+char run_cmd_expanded[1024];
+char *run_cmd_args[128];
 static volatile sig_atomic_t done;
 static Display *dpy;
 
