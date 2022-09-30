@@ -20,7 +20,7 @@ static const struct arg args[] = {
 	{ run_command,	"%s",	"~/dotfiles/scripts/bar/cpuUsage/cpuUsage.out --separator"				},
 	{ run_command,	"%s",	"~/dotfiles/scripts/bar/battery/battery.out --separator"				},
 	{ run_command,	"%s",	"~/dotfiles/scripts/bar/eth/eth.out --separator"						},
-	{ run_command,	"%s",	"~/dotfiles/scripts/bar/wifi/wifi.py --separator"						},
+	{ run_command,	"%s",	"~/dotfiles/scripts/bar/wifi/wifi.out --separator"						},
 	{ run_command,	"%s",	"~/dotfiles/scripts/bar/mullvadCheck/mullvadCheck.out --separator"		},
 	{ datetime,		"%s",	"%F - %T"																},
 };
